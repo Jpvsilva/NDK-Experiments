@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MyForthNDKApplication</string>
+    <string name="basic_c">Basic C</string>
+    <string name="button">Button</string>
+    <string name="bitwise">Bitwise</string>
+    <string name="conditional">Conditional</string>
+    <string name="if_else">If Else</string>
+    <string name="switch_string">Switch</string>
+    <string name="loop_string">Loops_Its</string>
+    <string name="star">Star</string>
+    <string name="number">Number</string>
+    <string name="functions">Functions</string>
+    <string name="arrays">Arrays</string>
+    <string name="strings">Strings</string>
+    <string name="pointers">Pointers</string>
+    <string name="files">Files</string>
+    <string name="not_yet_implemented">Not Yet Implemented</string>
+    <string name="create_file">Create File</string>
+    <string name="append_file">Append File</string>
+    <string name="read_file">Read File</string>
+</resources>

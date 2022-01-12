@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sample_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/categoriesLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample_text">
+
+        <Button
+            android:id="@+id/basicCButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/basic_c"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bitwiseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bitwise"
+            app:layout_constraintEnd_toStartOf="@+id/conditionalButton"
+            app:layout_constraintStart_toEndOf="@+id/basicCButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/conditionalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/conditional"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/ifElseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_else"
+            app:layout_constraintEnd_toEndOf="@+id/basicCButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/basicCButton" />
+
+        <Button
+            android:id="@+id/switchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/switch_string"
+            app:layout_constraintEnd_toEndOf="@+id/bitwiseButton"
+            app:layout_constraintStart_toStartOf="@+id/bitwiseButton"
+            app:layout_constraintTop_toBottomOf="@+id/bitwiseButton" />
+
+        <Button
+            android:id="@+id/loopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loop_string"
+            app:layout_constraintEnd_toEndOf="@+id/conditionalButton"
+            app:layout_constraintStart_toStartOf="@+id/conditionalButton"
+            app:layout_constraintTop_toBottomOf="@+id/conditionalButton" />
+
+        <Button
+            android:id="@+id/starButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/star"
+            app:layout_constraintEnd_toEndOf="@+id/ifElseButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ifElseButton" />
+
+        <Button
+            android:id="@+id/numberButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number"
+            app:layout_constraintEnd_toEndOf="@+id/switchButton"
+            app:layout_constraintStart_toStartOf="@+id/switchButton"
+            app:layout_constraintTop_toBottomOf="@+id/switchButton" />
+
+        <Button
+            android:id="@+id/functionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/functions"
+            app:layout_constraintEnd_toEndOf="@+id/loopButton"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/loopButton"
+            app:layout_constraintTop_toBottomOf="@+id/loopButton" />
+
+        <Button
+            android:id="@+id/arrayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arrays"
+            app:layout_constraintEnd_toEndOf="@+id/starButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/starButton" />
+
+        <Button
+            android:id="@+id/stringButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strings"
+            app:layout_constraintEnd_toEndOf="@+id/numberButton"
+            app:layout_constraintStart_toStartOf="@+id/numberButton"
+            app:layout_constraintTop_toBottomOf="@+id/numberButton" />
+
+        <Button
+            android:id="@+id/pointerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pointers"
+            app:layout_constraintEnd_toEndOf="@+id/functionButton"
+            app:layout_constraintStart_toStartOf="@+id/functionButton"
+            app:layout_constraintTop_toBottomOf="@+id/functionButton" />
+
+        <Button
+            android:id="@+id/fileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/files"
+            app:layout_constraintEnd_toEndOf="@+id/stringButton"
+            app:layout_constraintStart_toStartOf="@+id/stringButton"
+            app:layout_constraintTop_toBottomOf="@+id/stringButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

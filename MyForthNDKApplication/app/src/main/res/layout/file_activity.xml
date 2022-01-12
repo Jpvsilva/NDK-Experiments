@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/createFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_file"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fileOutputTextView" />
+
+    <Button
+        android:id="@+id/appendFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/append_file"
+        app:layout_constraintEnd_toEndOf="@+id/createFileButton"
+        app:layout_constraintStart_toStartOf="@+id/createFileButton"
+        app:layout_constraintTop_toBottomOf="@+id/createFileButton" />
+
+    <Button
+        android:id="@+id/readFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/read_file"
+        app:layout_constraintEnd_toEndOf="@+id/appendFileButton"
+        app:layout_constraintStart_toStartOf="@+id/appendFileButton"
+        app:layout_constraintTop_toBottomOf="@+id/appendFileButton" />
+
+    <TextView
+        android:id="@+id/fileOutputTextView"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
